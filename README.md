@@ -11,7 +11,7 @@ To run the Table For Juan website locally, follow these steps:
    - Download and install the latest LTS version suitable for your operating system.
    - Verify the installation by opening a terminal or command prompt and running the command `node -v`. It should display the installed Node.js version.
 
-2. Download or Clone the Repository: [https://github.com/prince-bojji/pokemon-unite](https://github.com/prince-bojji/tableforjuan.git))
+2. Download or Clone the Repository: [(https://github.com/prince-bojji/tableforjuan.git)](https://github.com/prince-bojji/tableforjuan.git))
 
 3. Open it in VS Code or any IDE:
    - In the terminal, navigate to the project folder by running the command `cd project-name`, replacing `project-name` with the actual name of the project folder.
