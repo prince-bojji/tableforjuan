@@ -54,7 +54,7 @@ const Footer = () => {
       <Collapsible title='Contact Us'>
         +63 9610984068<br />
         tableforjuan@gmail.com<br />
-        <button className='px-2 py-1 mt-1 bg-[#9E6B67] text-[#DEC1B9] rounded-md'>Form</button>
+        <button className='px-2 py-1 mt-1 bg-[#8F584B] text-[#DEC1B9] rounded-md'>Form</button>
       </Collapsible>
     </footer>
   )
