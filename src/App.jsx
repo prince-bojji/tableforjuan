@@ -5,9 +5,9 @@ import Hours_Location from './pages/Hours_Location';
 
 function App() {
   return (
-    <FAQ/>,
-    <ContactUs/>,
-    <Hours_Location/>
+     <FAQ/>
+    // <ContactUs/>,
+    // <Hours_Location/>
   )
 }
 

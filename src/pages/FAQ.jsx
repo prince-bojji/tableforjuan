@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const FAQ = () => {
   const [selectedTab, setSelectedTab] = useState(null);
@@ -7,7 +8,8 @@ const FAQ = () => {
 
   return (
     <>
-      <div className='p-6 bg-[#FFE8E8]'>
+    <Header/>
+      <div className='p-5 pb-3 pt-28 bg-[#FFE8E8]'>
         <h2 className='text-center text-4xl text-[#E79898] pt-19'>
           Frequently Asked Questions
         </h2>
