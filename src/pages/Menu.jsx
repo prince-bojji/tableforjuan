@@ -6,7 +6,6 @@ function Menu() {
   return (
     <>
       <Header />
-
       <div id="MENU">
         <h1 id="section">MENU</h1>
         <style>
@@ -56,7 +55,6 @@ function Menu() {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );

@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function ContactUs() {
   return (
     <>
+      <Header/>
       <div className='h-full'>
         <div className='w-full px-0 py-40 font-montserrat bg-[#fff7f4]'>
         <p className='text-center text-[#C25757] text-[2.8rem] sm:text-[3.5rem]'>CONTACT US</p>
@@ -63,6 +66,7 @@ function ContactUs() {
         </form>
       </div>
     </div>
+    <Footer/>
   </>
   )
 }

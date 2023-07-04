@@ -8,7 +8,6 @@ function About() {
   <Header />
   {/* SWIPER */}
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <header-component />
   {/* FIRST PANEL */}
   <div className="ourstory">
     <div className="newspaper">

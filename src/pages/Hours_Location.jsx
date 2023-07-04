@@ -1,7 +1,11 @@
 import React from 'react'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function Hours_Location() {
   return (
+    <>
+    <Header/>
     <div className='h-full font-montserrat px-0 py-40 bg-[#fff7f4]'>
       <p className='text-center text-[rgb(194,87,87)] text-[4xl] sm:text-[3.5rem] mb-10'>Hours and Location</p>
       <div className='min-h-[calc(100%_-_60px)] mx-auto'>
@@ -26,13 +30,14 @@ function Hours_Location() {
               <div className='h-full w-full max-w-full'>
                 <iframe className='h-full w-full border-0' frameBorder={0} 
                 src='https://www.google.com/maps/embed/v1/place?q=Kassel+Residences+-+Amsterdam+Building,+East+Rodriguez+Avenue,+Parañaque,+Metro+Manila,+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'/>
-    
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 
