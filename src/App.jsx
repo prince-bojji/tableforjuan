@@ -1,11 +1,13 @@
 import React from 'react'
 import FAQ from './pages/FAQ'
 import ContactUs from './pages/ContactUs'
+import Hours_Location from './pages/Hours_Location';
 
 function App() {
   return (
     <FAQ/>,
-    <ContactUs/>
+    <ContactUs/>,
+    <Hours_Location/>
   )
 }
 
