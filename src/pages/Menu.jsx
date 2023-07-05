@@ -1,8 +1,17 @@
 import React from 'react';
+<<<<<<< HEAD
+=======
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+>>>>>>> 5670bc52f953b6774a063309e5aaa94245e92e89
 
 function Menu() {
   return (
     <>
+<<<<<<< HEAD
+=======
+      <Header />
+>>>>>>> 5670bc52f953b6774a063309e5aaa94245e92e89
       <div id="MENU">
         <h1 id="section">MENU</h1>
         <style>
@@ -52,6 +61,10 @@ function Menu() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
+=======
+      <Footer />
+>>>>>>> 5670bc52f953b6774a063309e5aaa94245e92e89
     </>
   );
 }

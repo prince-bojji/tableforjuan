@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 function About() {
   return (
@@ -8,7 +8,6 @@ function About() {
   <Header />
   {/* SWIPER */}
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <header-component />
   {/* FIRST PANEL */}
   <div className="ourstory">
     <div className="newspaper">
