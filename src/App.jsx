@@ -7,11 +7,13 @@ import Hours_Location from './pages/Hours_Location';
 
 function App() {
   return (
-    //<Home/>
-    <Menu/>
-    //<FAQ/>,
-    // <Hours_Location/>,
-    // <ContactUs/>
+    <>
+      {/* <Home/> */}
+      <Menu/>
+      {/* <FAQ/>
+      <Hours_Location/>
+      <ContactUs/> */}
+    </>
   )
 }
 
