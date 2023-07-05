@@ -1,11 +1,8 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 function About() {
   return (
     <>
-  <Header />
   {/* SWIPER */}
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   {/* FIRST PANEL */}
@@ -16,7 +13,7 @@ function About() {
           <div className="carousel">
             <div className="slider">
               <section>
-                <img id="slide-1" src="/images/About/cooking1.jpg" />
+                <img id="slide-1" src="/src/images/About/cooking1.jpg" />
               </section>
               <section>
                 <img id="slide-2" src="/images/About/cooking2.jpg" />
@@ -132,7 +129,6 @@ function About() {
     </div>
   </div>
   {/* FOOTER */}
-  <Footer />
 </>
   )
 }
