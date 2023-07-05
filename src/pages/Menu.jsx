@@ -1,12 +1,8 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
 function Menu() {
   return (
     <>
-      <Header />
-
       <div id="MENU">
         <h1 id="section">MENU</h1>
         <style>
@@ -19,7 +15,7 @@ function Menu() {
         </style>
         <div className="image-grid">
           <div className="image-grid-item reveal">
-            <img src="/images/Menu/MENU_FRIEDBANGUS1.png" alt="Fried Bangus" />
+            <img src="/src/images/Menu/MENU_FRIEDBANGUS1.png" alt="Fried Bangus" />
             <div className="image-caption">FRIED BANGUS</div>
           </div>
           <div className="image-grid-item reveal">
@@ -56,8 +52,6 @@ function Menu() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }
