@@ -9,10 +9,10 @@ import Hours_Location from './pages/Hours_Location';
 function App() {
   return (
     <>
-      {/* <About/>
-      <Home/> */}
-      <Menu/>
-      {/* <FAQ/>
+      {/* <About/> */}
+      <Home/>
+      {/* <Menu/>
+      <FAQ/>
       <Hours_Location/>
       <ContactUs/>  */}
     </>
