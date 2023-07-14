@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import banner from '../images/Home/banner.png';
 import friedBangus from '../images/Home/friedbangus.png';
 import bakedBangus from '../images/Home/bakedbangus.jpg';
