@@ -1,13 +1,14 @@
 import React from 'react'
 import {useEffect, useState} from 'react';
-import logo from '../images/Home/logo.png'
+import logo from '../images/Home/logo.png';
+import { Link } from 'react-router-dom';
 
 const NavLink = (props) =>{
   return (  
     <li className='z-[1] [list-style:none] inline-block relative max-[768px]:mx-0 max-[768px]:my-4 ' >
-      <a href={props.link} className={`nav-link text-[#8F584B] no-underline [font-family:'Montserrat',sans-serif] hover:text-[#009688] transition hover:transition-[0.5s] hover:underline`}>
+      <Link to ={props.link} className={`nav-link text-[#8F584B] no-underline [font-family:'Montserrat',sans-serif] hover:text-[#009688] transition hover:transition-[0.5s] hover:underline`}>
         {props.children}
-      </a>
+      </Link>
      </li>
   )
 
@@ -49,19 +50,19 @@ function Header() {
     if (windowSize.innerWidth < 769){
       return(
         <ul className={`z-[5] fixed opacity-0 flex gap-0 flex-col bg-[rgba(222,193,185,0.75)] transition  w-full text-center hover:transition-[0.3s] left-0 top-[70px] ${isActive ? 'visible opacity-100 transition-[0.3s] pt-8 left-0 flex-col': 'transition  invisible'} `}>
-        <NavLink link="Home.jsx">
+        <NavLink link="/">
           Home
         </NavLink>
-        <NavLink link="About.jsx">
+        <NavLink link='/About'>
           About
         </NavLink>
-        <NavLink link="Menu.jsx">
+        <NavLink link="/Menu">
         Menu
         </NavLink>
-        <NavLink link="Hours_Location.jsx">
+        <NavLink link="/Hours_Location">
           Hours &amp; Location
         </NavLink>
-        <NavLink link="FAQ.jsx">
+        <NavLink link="/FAQ">
         FAQ
         </NavLink>
       </ul>
@@ -70,19 +71,19 @@ function Header() {
     } else{
       return(
         <ul className={`flex justify-between items-center gap-20 `}>
-        <NavLink link="Home.jsx">
+        <NavLink link="/">
           Home
         </NavLink>
-        <NavLink link="About.jsx">
+        <NavLink link='/About'>
           About
         </NavLink>
-        <NavLink link="Menu.jsx">
+        <NavLink link="/Menu">
         Menu
         </NavLink>
-        <NavLink link="Hours_Location.jsx">
+        <NavLink link="/Hours_Location">
           Hours &amp; Location
         </NavLink>
-        <NavLink link="FAQ.jsx">
+        <NavLink link="/FAQ">
         FAQ
         </NavLink>
       </ul>
@@ -98,6 +99,7 @@ function Header() {
     <nav className="navbar min-h-[80px] flex justify-between items-center px-6 py-0">
       <img className="navbar-logo w-[120px] cursor-pointer pl-[10]" src={logo} />
       <NavMenuList></NavMenuList>
+      
       <br />
       <div onClick={handleToggle} className={`hamburger lg:hidden cursor-pointer md:block ${isActive ? '[&>*:nth-child(1)]:translate-y-2 [&>*:nth-child(1)]:rotate-45 [&>*:nth-child(2)]:opacity-0 [&>*:nth-child(3)]:-translate-y-2 [&>*:nth-child(3)]:-rotate-45': ' '}`}>
           <HamburgerLine></HamburgerLine>
