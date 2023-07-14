@@ -36,7 +36,6 @@ function Hours_Location() {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   )
 }
