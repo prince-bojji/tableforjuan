@@ -8,6 +8,8 @@ import Hours_Location from './pages/Hours_Location';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <div className='App'>
         <Header></Header>
         <div className='content'>
+            <ScrollToTop/>
           <Routes>
             <Route exact path="/" element = {<Home/>}>
             </Route>
