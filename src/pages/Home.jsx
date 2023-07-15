@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import banner from '../images/Home/banner.png';
 import friedBangus from '../images/Home/friedbangus.png';
 import bakedBangus from '../images/Home/bakedbangus.jpg';
@@ -19,7 +17,6 @@ const BestSeller = props => {
 const Home = () => {
   return (
     <div className='bg-[#fff7f4] font-montserrat'>
-      <Header />
 
       <img src={banner} className='w-screen h-screen object-cover' />
       <div className='flex justify-center items-center w-screen h-[40vh] bg-cover bg-[url("/src/images/Home/wood.png")]'>
@@ -57,8 +54,6 @@ const Home = () => {
           View Menu
         </button>
       </div>
-
-      <Footer />
     </div>
   );
 };
