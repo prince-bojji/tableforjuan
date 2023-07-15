@@ -19,3 +19,6 @@ To run the Table For Juan website locally, follow these steps:
    - After that, it will show the localhost link. Follow that link in your web browser to access and run the website.
 
 That's it! You should now be able to run the Table For Juan website locally.
+
+
+4. If project is not working, use [npm install] on the main project folder to reinstall missing node components
