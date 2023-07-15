@@ -1,11 +1,9 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+
 
 function Hours_Location() {
   return (
     <>
-    <Header/>
     <div className='h-full min-h-screen font-montserrat px-0 py-40 bg-[#fff7f4]'>
       <p className='text-center text-[rgb(194,87,87)] text-[4xl] sm:text-[3.5rem] mb-10'>Hours and Location</p>
       <div className='min-h-[calc(100%_-_60px)] mx-auto'>
@@ -36,7 +34,6 @@ function Hours_Location() {
         </div>
       </div>
     </div>
-    <Footer/>
     </>
   )
 }
