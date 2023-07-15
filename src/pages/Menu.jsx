@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const MenuItem = (props) => {
   return (
@@ -21,7 +19,6 @@ const Menu = () => {
   return (
     <>
       <div className="bg-[#FFE8E8] min-h-screen pb-16">
-      <Header/>
         <div id="MENU" className="text-center pt-16 px-4 sm:px-8 bg-FFE8E8">
           <h1
             id="section"
@@ -78,7 +75,6 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   );
 };

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
-import logo from '../images/Home/footer_logo.png'
-import fb from '../images/Home/footer_facebook.png'
-import insta from '../images/Home/footer_insta.png'
+import React, { useState } from 'react';
+import logo from '../images/Home/footer_logo.png';
+import fb from '../images/Home/footer_facebook.png';
+import insta from '../images/Home/footer_insta.png';
+import { useNavigate } from 'react-router-dom';
+
 
 const Collapsible = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -30,6 +32,7 @@ const ImageLink = (props) => {
 }
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className='flex flex-col lg:flex-row justify-evenly py-12 px-5 bg-[#DEC1B9] font-montserrat text-[#9E6B67] text-[0.725rem]'>
       <div className='px-20 m-auto lg:m-0 w-fit text-center order-1 lg:-order-1'>
@@ -54,7 +57,7 @@ const Footer = () => {
       <Collapsible title='Contact Us'>
         +63 9610984068<br />
         tableforjuan@gmail.com<br />
-        <button className='px-2 py-1 mt-1 bg-[#8F584B] text-[#DEC1B9] rounded-md'>Form</button>
+        <button  className='px-2 py-1 mt-1 bg-[#8F584B] text-[#DEC1B9] rounded-md' onClick={() => navigate("/ContactUs")}>Form</button>
       </Collapsible>
     </footer>
   )
