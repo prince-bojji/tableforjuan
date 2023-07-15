@@ -21,4 +21,4 @@ To run the Table For Juan website locally, follow these steps:
 That's it! You should now be able to run the Table For Juan website locally.
 
 
-4. If project is not working, use [npm install] on the main project folder to reinstall missing node components
+4. If project is not working, use `npm install` on the main project folder to reinstall missing node components
