@@ -47,10 +47,10 @@ function ContactUs() {
 
   return (
     <>
-      <div className='min-h-screen bg-[#fff7f4]'>
-      <div className='w-full px-0 py-40 font-montserrat bg-[#fff7f4]'>
-      <p className='text-center text-[#C25757] text-[2.8rem] sm:text-[3.5rem]'>CONTACT US</p>
-      <p className='text-center text-[1em] mb-[1.3em] sm:text-[1.2em]'>Send us a message and we'll get back to you as soon as possible.<br/>Looking forward to hearing from
+      <div className='min-h-screen bg-[#fff7f4] px-5'>
+      <div className='w-full px-0 py-28 font-montserrat bg-[#fff7f4]'>
+      <p className='text-center font-bold text-[#E79898] text-[2.5rem] sm:text-5xl'>CONTACT US</p>
+      <p className='py-3 text-center sm:text-base mb-[1.3em] text-sm'>Send us a message and we'll get back to you as soon as possible.<br/>Looking forward to hearing from
         you. </p>
       <form onSubmit={addDbContact} className='w-[60vw] max-w-[500px] min-w-[300px] mx-auto bg-[#9ACEB4] shadow-[0rem_0rem_0_10px_#FFE8E8] 
       text-[#4E4141] my-0 rounded-[3rem_0] mb-0 sm:w-3/5 p-[1.5em]'>
@@ -65,7 +65,7 @@ function ContactUs() {
               placeholder="Enter your name"
               value={state.name} 
               onChange={handleChange}
-              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-[0.8rem] border-none'/></label>
+              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-lg border-none'/></label>
           <label 
             className='block my-4 text-base mx-0 font-medium'>Email 
             <input 
@@ -76,7 +76,7 @@ function ContactUs() {
               value={state.email} 
               onChange={handleChange}
               placeholder="Enter a valid email address" 
-              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-[0.8rem] border-none'/></label>
+              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-lg border-none'/></label>
           <label 
             className='block my-4 text-base mx-0 font-medium'>Phone Number 
             <input 
@@ -87,7 +87,7 @@ function ContactUs() {
               value={state.number} 
               onChange={handleChange}
               placeholder="Enter a valid phone number" pattern="[0]{1}[9]{1}[0-9]{9}" 
-              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-[0.8rem] border-none'/></label>
+              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-lg border-none'/></label>
           <label 
             className='block my-4 text-base mx-0 font-medium'>Message
             <textarea 
@@ -99,15 +99,15 @@ function ContactUs() {
               placeholder="Your message"
               value={state.message} 
               onChange={handleChange}
-              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-[0.8rem] border-none resize-none overflow-auto'></textarea>
+              className='w-full min-h-[2em] text-sm mt-2.5 mb-0 mx-0 p-2 rounded-lg border-none resize-none overflow-auto'></textarea>
           </label>
         </div>
         <input 
           type="submit" 
           value="SUBMIT" 
-          className='min-h-[2em] text-sm mt-2.5 mb-0 p-2 rounded-[0.8rem] border-none
-          font-bold block w-2/5 h-[2.2em] text-[1.1rem] min-w-[200px] bg-white 
-          text-black duration-0.4 mx-auto my-[1.2em] px-0 hover:bg-[#ebebeb]'/>
+          className='text-sm mt-2.5 mb-0 p-2 rounded-lg border-none
+          font-bold block text-[1.1rem] min-w-[200px] bg-white 
+          text-[#4E4141] transition-all duration-300 mx-auto hover:bg-[#ebebeb]'/>
       </form>
     </div>
     </div>

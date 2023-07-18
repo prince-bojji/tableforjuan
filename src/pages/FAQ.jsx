@@ -10,9 +10,8 @@ const FAQ = () => {
 
   return (
     <>
-    <Header/>
-      <div className='p-5 pb-3 pt-28 bg-[#FFE8E8]'>
-        <h2 className='text-center text-4xl text-[#E79898] pt-19'>
+      <div className='p-5 pb-3 pt-28 bg-[#fff7f4] font-montserrat'>
+        <h2 className='text-center font-bold text-[#E79898] text-5xl pt-19'>
           Frequently Asked Questions
         </h2>
         <form className='text-right'>
@@ -68,7 +67,7 @@ const FAQ = () => {
                 setSelectedTab(tab.id === selectedTab ? null : tab.id)
               }
               className='relative flex items-center w-full cursor-pointer'>
-              <h3 className='text-white font-medium'>{tab.title}</h3>
+              <h3 className='text-white font-semibold'>{tab.title}</h3>
               <span className='absolute right-5 text-black text-opacity-10 text-4xl transition-transform duration-1000 transform'>
                 {selectedTab === tab.id ? '-' : '+'}
               </span>
