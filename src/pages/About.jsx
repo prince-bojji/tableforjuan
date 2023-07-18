@@ -37,16 +37,13 @@ function About() {
                 </span>
               </div>
               {/*Description*/}
-              <div className="h-full bg-[rgba(236,214,211,0.8)] shadow-[0px_0px_20px_rgba(0,0,0,0.4)] p-12 rounded-[10px]"
-                style={{fontFamily: 'Montserrat',}}>
-                  <h1 className="text-left text-[#e4acac] -mt-px"
-                    style={{fontSize: '3xl',}}>
-                      OUR STORY
-                  </h1>
-                  <p className="text-justify text-[25px] text-[#363636]"
-                    style={{fontSize: '15px',}}>
-                      During the pandemic, we aspired to have a successful business to alleviate hunger. My mother's sister presented us with an opportunity, which we eagerly seized. Initially, we planned for a food truck, but without a suitable vehicle, we opted for a food delivery service that caters to Filipinos' preferences for rice and viands. Our family is busy in the morning fulfilling orders and motivated by positive customer feedback. We aim to expand Table for Juan with a bakery and serve more customers.
-                  </p>
+              <div className="desc h-full bg-[rgba(236,214,211,0.8)] shadow-[0px_0px_20px_rgba(0,0,0,0.4)] p-12 rounded-[10px]">
+                <h1 className="text-left text-[#e4acac] -mt-px text-3xl" style={{ fontFamily: "Montserrat" }}>
+                  OUR STORY
+                </h1>
+                <p className="text-justify text-[25px] text-[#363636]">
+                  During the pandemic, we aspired to have a successful business to alleviate hunger. My mother's sister presented us with an opportunity, which we eagerly seized. Initially, we planned for a food truck, but without a suitable vehicle, we opted for a food delivery service that caters to Filipinos' preferences for rice and viands. Our family is busy in the morning fulfilling orders and motivated by positive customer feedback. We aim to expand Table for Juan with a bakery and serve more customers.
+                </p>
               </div>
             </div>
           </div>
