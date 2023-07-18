@@ -4,8 +4,8 @@ import React from 'react'
 function Hours_Location() {
   return (
     <>
-    <div className='h-full min-h-screen font-montserrat px-0 py-40 bg-[#fff7f4]'>
-      <p className='text-center text-[rgb(194,87,87)] text-[4xl] sm:text-[3.5rem] mb-10'>Hours and Location</p>
+    <div className='h-full min-h-screen font-montserrat px-0 py-28 bg-[#fff7f4]'>
+      <p className='text-center font-bold text-[#E79898] text-5xl mb-10'>Hours and Location</p>
       <div className='min-h-[calc(100%_-_60px)] mx-auto'>
         <div className='min-h-screen sm:min-w-[70vw] w-9/12 overflow-auto bg-[#9ACEB4] shadow-[0rem_0rem_0_10px_#FFE8E8] mx-auto my-0 p-4 rounded-[3rem_0]'>
           <div className='min-h-full text-[#4E4141] text-[1.2em] not-italic text-center mt-12 mb-0 mx-16'>

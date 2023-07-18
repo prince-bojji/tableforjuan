@@ -18,13 +18,13 @@ const MenuItem = (props) => {
 const Menu = () => {
   return (
     <>
-      <div className="bg-[#FFE8E8] min-h-screen pb-16">
+      <div className="bg-[#fff7f4] min-h-screen py-14">
         <div id="MENU" className="text-center pt-16 px-4 sm:px-8 bg-FFE8E8">
           <h1
             id="section"
-            className="mb-10 inline-block text-[#E79898] font-montserrat font-bold text-4xl sm:text-5xl"
+            className="mb-10 inline-block text-[#E79898] font-montserrat font-bold text-center text-5xl "
           >
-            MENU
+            Menu
           </h1>
           <div className="image-grid grid grid-cols-2 sm:grid-cols-3 gap-12">
             <MenuItem
