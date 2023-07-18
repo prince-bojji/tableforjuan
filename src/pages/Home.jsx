@@ -7,10 +7,15 @@ import beefMushroom from '../images/Home/beef_with_mushroom.jpg';
 
 const BestSeller = props => {
   return (
-    <img
-      src={props.image}
-      className='w-[40rem] h-48 lg:w-72 lg:hover:w-96 lg:h-96 object-cover rounded-lg transition-all duration-700'
-    />
+    <div className='group relative'>
+      <img
+        src={props.image}
+        className='w-[40rem] h-48 lg:w-72 lg:group-hover:w-96 lg:h-96 object-cover rounded-lg transition-all duration-700'
+      />
+      <div className='opacity-0 lg:group-hover:opacity-70 flex justify-center items-center absolute lg:bottom-10 w-full h-16 bg-[#fff7f4] transition-all duration-700'>
+        <h2 className='font-bold text-xl text-[#5d8a73]'>{props.name}</h2>
+      </div>
+    </div>
   );
 };
 
@@ -47,9 +52,9 @@ const Home = () => {
       <div className='flex flex-col justify-center items-center w-full lg:h-screen px-6 py-10 bg-fixed bg-cover bg-[url("/src/images/Home/best_seller_bg.png")]'>
         <h1 className='font-extrabold text-[#9E6B67] text-5xl'>Best Sellers</h1>
         <div className='flex flex-col lg:flex-row gap-5 mt-10 mb-3'>
-          <BestSeller image={bakedBangus} />
-          <BestSeller image={beefBrocoli} />
-          <BestSeller image={beefMushroom} />
+          <BestSeller name="Baked Bangus" image={bakedBangus} />
+          <BestSeller name="Beef Broccoli" image={beefBrocoli} />
+          <BestSeller name="Beef in Mushroom Sauce" image={beefMushroom} />
         </div>
         <p className='font-courgette text-[#71A78C] text-center text-2xl'>
           Discover the delicious offering we have everyday of the week.
