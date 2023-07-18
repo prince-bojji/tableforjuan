@@ -97,7 +97,9 @@ function Header() {
   return (
     <header className ="z-[9] w-full lg:bg-[rgba(222,193,185,0.75)] fixed bg-[rgba(222,193,185,1)] md:transition-[0.5s]" >
     <nav className="navbar min-h-[80px] flex justify-between items-center px-6 py-0">
-      <img className="navbar-logo w-[120px] cursor-pointer pl-[10]" src={logo} />
+      <Link to='/'>
+        <img className="navbar-logo w-[120px] cursor-pointer pl-[10]" src={logo} />
+      </Link>
       <NavMenuList></NavMenuList>
       
       <br />

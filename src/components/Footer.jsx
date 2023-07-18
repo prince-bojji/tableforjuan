@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from '../images/Home/footer_logo.png';
 import fb from '../images/Home/footer_facebook.png';
 import insta from '../images/Home/footer_insta.png';
-import { useNavigate } from 'react-router-dom';
-
 
 const Collapsible = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -33,10 +32,11 @@ const ImageLink = (props) => {
 
 const Footer = () => {
   const navigate = useNavigate();
+  
   return (
     <footer className='flex flex-col lg:flex-row justify-evenly py-12 px-5 bg-[#DEC1B9] font-montserrat text-[#9E6B67] text-[0.725rem]'>
       <div className='px-20 m-auto lg:m-0 w-fit text-center order-1 lg:-order-1'>
-        <img src={logo} className='m-auto w-40 max-w-full h-auto' />
+        <img src={logo} className='m-auto w-40 max-w-full h-auto' onClick={() => navigate('/')} />
         &copy; 2020 Table for Juan. All rights reserved
       </div>
 

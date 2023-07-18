@@ -1,9 +1,11 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
 const FAQ = () => {
   const [selectedTab, setSelectedTab] = useState(null);
+  const navigate = useNavigate();
   const searchInputRef = useRef();
 
   return (
@@ -78,11 +80,12 @@ const FAQ = () => {
         ))}
         <div className='text-center text-gray-700 py-5'>
           <p>Feel free to ask by messaging here.</p>
-          <a href='ContactUs.jsx' target='_blank' rel='noopener noreferrer'>
-            <button className='border-none bg-[#C25757] text-white px-8 py-2 text-center inline-block my-5 cursor-pointer rounded-full hover:bg-red-600 transition duration-200 ease-in-out'>
-              Contact Us
-            </button>
-          </a>
+          <button 
+            className='border-none bg-[#C25757] text-white px-8 py-2 text-center inline-block my-5 cursor-pointer rounded-full hover:bg-red-600 transition duration-200 ease-in-out'
+            onClick={() => navigate('/ContactUs')}
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </>
