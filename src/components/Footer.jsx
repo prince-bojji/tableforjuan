@@ -58,7 +58,7 @@ const Collapsible = (props) => {
 const ImageLink = (props) => {
   return (
     <a href={props.link} target='_blank' rel='noopener noreferrer'>
-      <img src={props.image} alt={props.name} className='w-10 h-auto' onLoad={() => setLoaded(true)} />
+      <img src={props.image} alt={props.name} className='w-10 h-auto' />
     </a>
   )
 };
