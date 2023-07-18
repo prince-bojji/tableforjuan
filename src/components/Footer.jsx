@@ -6,6 +6,7 @@ import insta from '../images/Home/footer_insta.png';
 
 const Collapsible = (props) => {
   const [isOpen, setOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const [isLargeScreen, setLargeScreen] = useState(false);
   const [height, setHeight] = useState(0);
   const ref = useRef(null);
@@ -23,8 +24,20 @@ const Collapsible = (props) => {
     };
   }, []);
 
+  // Ensure images will be fully loaded
   useEffect(() => {
-    setHeight((isOpen || isLargeScreen) ? ref.current?.getBoundingClientRect().height : 0);
+    let timeout;
+    const handleHeight = () => {
+      timeout = setTimeout(() => {
+        setHeight((isOpen || isLargeScreen) ? ref.current.offsetHeight : 0);
+      }, 100);
+    };
+
+    handleHeight();
+
+    return () => {
+      clearTimeout(timeout);
+    };
   }, [isOpen, isLargeScreen]);
 
   return (
@@ -44,8 +57,8 @@ const Collapsible = (props) => {
 
 const ImageLink = (props) => {
   return (
-    <a href={props.link} target="_blank">
-      <img src={props.image} alt={props.name} className='w-10 h-auto' />
+    <a href={props.link} target='_blank' rel='noopener noreferrer'>
+      <img src={props.image} alt={props.name} className='w-10 h-auto' onLoad={() => setLoaded(true)} />
     </a>
   )
 };
