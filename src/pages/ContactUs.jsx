@@ -3,8 +3,7 @@ import React, { useState } from 'react'
 import { db } from '../firebase_setup/firebase';
 
 function ContactUs() {
-  var showdate = new Date();
-  var displaytodaysdate = showdate.toDateString+'  :  ' + showdate.toLocaleDateString();
+  const[time, setTime] = useState(new Date())
 
   const [state, setState] = React.useState({
     email: "",
@@ -22,7 +21,7 @@ function ContactUs() {
         contact_message: state.message,
         contact_name: state.name,
         contact_num: state.number,
-        contact_submit_time: displaytodaysdate 
+        contact_submit_time: time 
       });
       console.log("Document written with ID: ", docRef.id);
       alert("Successfully Submitted!");
