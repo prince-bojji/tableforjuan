@@ -1,5 +1,6 @@
-Table for Juan
-About the Project
+# Table for Juan 
+
+## About the Project
 
 Table for Juan is a fast, healthy, and affordable Filipino meal delivery service. The project is designed to cater to the fast-paced life of today's generation while offering a touch of nostalgia with each meal. Our goal is to bring homely, authentic Filipino meals to your doorstep, ensuring they are as delicious and nutritious as if you've just eaten at your own dining table.
 
@@ -9,39 +10,30 @@ Located in Kassel Residences, Paranaque City, we operate from Monday to Friday, 
 
 For feedback, queries or to order your favorite meals, email us at feedback@tableforjuan.com, or visit our Facebook page.
 
-This application is built using Tailwind CSS, React JS, and Firebase.
-Getting Started
+This application is built using Tailwind CSS, React JS, and Firebase. 
 
-To get a local copy up and running, follow these steps.
-Prerequisites
+## Getting Started
+
+To get a local copy up and running, follow these steps. 
+
+### Prerequisites
 
 Before you begin, ensure you have installed the latest version of:
 
-    Node.js and npm
-    Git
+- Node.js and npm
+- Git
 
-Installation
+### Installation
 
-    Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/table-for-juan.git
 
-    bash
-
-git clone https://github.com/your-username/table-for-juan.git
-
-Navigate to the project directory:
-
-bash
-
-cd table-for-juan
-
-Install the project dependencies:
-
-npm install
-
-Start the development server:
-
-sql
-
+2. Navigate to the project directory:
+    cd table-for-juan
+3. Install the project dependencies:
+    npm install
+4. Start the development server:
     npm start
 
 Now you should be able to see the project running at localhost:3000.
@@ -66,3 +58,4 @@ Acknowledgements
 We would like to express our gratitude to all our customers for their feedback and continued support.
 
 Remember, there's always a Table for Juan.
+    
