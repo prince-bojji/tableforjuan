@@ -6,7 +6,6 @@ import insta from '../images/Home/footer_insta.png';
 
 const Collapsible = (props) => {
   const [isOpen, setOpen] = useState(false);
-  const [loaded, setLoaded] = useState(false);
   const [isLargeScreen, setLargeScreen] = useState(false);
   const [height, setHeight] = useState(0);
   const ref = useRef(null);

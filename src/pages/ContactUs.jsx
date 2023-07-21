@@ -49,7 +49,7 @@ function ContactUs() {
     <>
       <div className='min-h-screen bg-[#fff7f4] px-5'>
       <div className='w-full px-0 py-28 font-montserrat bg-[#fff7f4]'>
-      <p className='text-center font-bold text-[#E79898] text-[2.5rem] sm:text-5xl'>CONTACT US</p>
+      <p className='text-center font-bold text-[#E79898] text-[2.5rem] sm:text-5xl'>Contact Us</p>
       <p className='py-3 text-center sm:text-base mb-[1.3em] text-sm'>Send us a message and we'll get back to you as soon as possible.<br/>Looking forward to hearing from
         you. </p>
       <form onSubmit={addDbContact} className='w-[60vw] max-w-[500px] min-w-[300px] mx-auto bg-[#9ACEB4] shadow-[0rem_0rem_0_10px_#FFE8E8] 

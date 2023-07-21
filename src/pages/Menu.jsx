@@ -2,13 +2,13 @@ import React from 'react';
 
 const MenuItem = (props) => {
   return (
-    <div className="image-grid-item flex flex-col items-center text-center transition duration-500 ease-in-out group hover:scale-110">
+    <div className="flex flex-col items-center text-center transition duration-500 ease-in-out group hover:scale-110">
       <img
         src={props.image}
         alt={props.alt}
-        className="w-1/2 h-auto rounded-full ring-4 ring-transparent hover:ring-rose-500"
+        className="w-32 lg:w-1/2 h-auto rounded-full ring-4 ring-transparent group-hover:ring-[#E79898]"
       />
-      <div className="image-caption text-rose-500 text-lg font-montserrat font-normal pb-8 mt-10 border-b-2 border-rose-500">
+      <div className="text-[#8F584B] text-lg font-montserrat font-normal pb-3 mt-10 border-b-2 border-[#8F584B]">
         {props.caption}
       </div>
     </div>
@@ -18,15 +18,15 @@ const MenuItem = (props) => {
 const Menu = () => {
   return (
     <>
-      <div className="bg-[#fff7f4] min-h-screen py-14">
-        <div id="MENU" className="text-center pt-16 px-4 sm:px-8 bg-FFE8E8">
+      <div className="bg-[#fff7f4] min-h-screen py-28">
+        <div id="MENU" className="text-center px-5 lg:px-20 bg-FFE8E8">
           <h1
             id="section"
             className="mb-10 inline-block text-[#E79898] font-montserrat font-bold text-center text-5xl "
           >
             Menu
           </h1>
-          <div className="image-grid grid grid-cols-2 sm:grid-cols-3 gap-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-12">
             <MenuItem
               image="/src/images/Menu/MENU_FRIEDBANGUS1.png"
               alt="Fried Bangus"

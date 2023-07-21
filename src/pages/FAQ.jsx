@@ -1,28 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 
 const FAQ = () => {
   const [selectedTab, setSelectedTab] = useState(null);
   const navigate = useNavigate();
-  const searchInputRef = useRef();
 
   return (
     <>
-      <div className='p-5 pb-3 pt-28 bg-[#fff7f4] font-montserrat'>
-        <h2 className='text-center font-bold text-[#E79898] text-5xl pt-19'>
+      <div className='pt-28 py-10 px-5 lg:px-16 bg-[#fff7f4] font-montserrat'>
+        <h2 className='text-center font-bold text-[#E79898] text-5xl mb-10'>
           Frequently Asked Questions
         </h2>
-        <form className='text-right'>
-          <input
-            type='text'
-            id='search'
-            name='search'
-            placeholder='Search'
-            className='border-none text-gray-400 w-44 h-6 text-sm pl-2 rounded-md mt-5 mb-5'
-          />
-        </form>
         {[
           {
             id: 1,
@@ -61,26 +49,28 @@ const FAQ = () => {
         ].map(tab => (
           <div
             key={tab.id}
-            className='relative bg-[#C25757] p-5 shadow-md rounded-md overflow-hidden mb-5'>
+            className='relative bg-[#9ACEB4] shadow-md p-5 rounded-md overflow-hidden mb-5'
+          >
             <button
               onClick={() =>
                 setSelectedTab(tab.id === selectedTab ? null : tab.id)
               }
-              className='relative flex items-center w-full cursor-pointer'>
-              <h3 className='text-white font-semibold'>{tab.title}</h3>
-              <span className='absolute right-5 text-black text-opacity-10 text-4xl transition-transform duration-1000 transform'>
+              className='relative flex items-center w-full'
+            >
+              <h3 className='text-[#6d4c44] font-semibold'>{tab.title}</h3>
+              <span className='absolute right-0 text-black text-opacity-20 text-4xl transition-all duration-1000'>
                 {selectedTab === tab.id ? '-' : '+'}
               </span>
             </button>
             {selectedTab === tab.id && (
-              <div className='mt-5 text-justify text-white'>{tab.content}</div>
+              <div className='mt-5 text-justify text-[#6d4c44]'>{tab.content}</div>
             )}
           </div>
         ))}
-        <div className='text-center text-gray-700 py-5'>
+        <div className='text-center text-gray-700 pt-5'>
           <p>Feel free to ask by messaging here.</p>
           <button 
-            className='border-none bg-[#C25757] text-white px-8 py-2 text-center inline-block my-5 cursor-pointer rounded-full hover:bg-red-600 transition duration-200 ease-in-out'
+            className='border-none bg-[#9ACEB4] text-[#6d4c44] font-semibold px-8 py-2 text-center inline-block my-5 rounded-full transition duration-200'
             onClick={() => navigate('/ContactUs')}
           >
             Contact Us
