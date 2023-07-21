@@ -11,18 +11,9 @@ const FAQ = () => {
   return (
     <>
       <div className='p-5 pb-3 pt-28 bg-[#fff7f4] font-montserrat'>
-        <h2 className='text-center font-bold text-[#E79898] text-5xl pt-19'>
+        <h2 className='text-center font-bold text-[#E79898] text-5xl pt-19 pb-5'>
           Frequently Asked Questions
         </h2>
-        <form className='text-right'>
-          <input
-            type='text'
-            id='search'
-            name='search'
-            placeholder='Search'
-            className='border-none text-gray-400 w-44 h-6 text-sm pl-2 rounded-md mt-5 mb-5'
-          />
-        </form>
         {[
           {
             id: 1,
