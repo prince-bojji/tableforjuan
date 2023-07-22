@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const FAQIcon = () => {
   return (
-    <div className='w-[20px] h-[0.15rem] bg-[#7BA590] transition-all duration-500 ease-out'></div>
+    <div className='w-[20px] h-[0.15rem] bg-[#7BA590] transition-all duration-[600ms] ease-out'></div>
   );
 };
 
@@ -22,13 +22,13 @@ const FAQItem = (props) => {
         className='flex justify-between items-center w-full py-4'
       >
         <h3 className='font-semibold'>{props.title}</h3>
-        <div className={`transition-transform duration-500 ease-out [&>*:nth-child(1)]:-rotate-90 [&>*:nth-child(1)]:translate-y-[2.5px] ${props.opened && '[&>*:nth-child(1)]:-rotate-0 [&>*:nth-child(2)]:rotate-180'}`}>
+        <div className={`transition-all duration-[600ms] ease-out [&>*:nth-child(1)]:-rotate-90 [&>*:nth-child(1)]:translate-y-[2.5px] ${props.opened && '[&>*:nth-child(1)]:rotate-0 [&>*:nth-child(2)]:rotate-180'}`}>
           <FAQIcon />
           <FAQIcon />
         </div>
       </button>
       <div 
-        className='text-justify overflow-hidden transition-all duration-500'
+        className='text-justify overflow-hidden transition-all duration-[600ms]'
         style={{height}} 
       >
         <div ref={ref}>{props.content}</div>
