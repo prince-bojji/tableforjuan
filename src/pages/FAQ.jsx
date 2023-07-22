@@ -89,7 +89,7 @@ const FAQ = () => {
       <div className='text-center text-gray-700 pt-5'>
         <p>Feel free to ask by messaging here.</p>
         <button 
-          className='border-none bg-[#9ACEB4] text-[#6d4c44] font-semibold px-8 py-2 text-center inline-block my-5 rounded-full transition duration-200'
+          className='border-none bg-[#9ACEB4] hover:bg-[#7db69a] text-[#6d4c44] font-semibold px-8 py-2 text-center inline-block my-5 rounded-full transition duration-200'
           onClick={() => navigate('/ContactUs')}
         >
           Contact Us

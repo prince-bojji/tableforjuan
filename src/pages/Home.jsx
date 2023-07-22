@@ -43,7 +43,7 @@ const Home = () => {
             that want to feel the vibes of salo-salo and the authenticity of the
             hapag-kainan served directly for your convenience.
           </p>
-          <button className='w-fit px-3 py-1 mt-3 bg-[#9ACEB4] text-[#6d4c44] rounded-lg' onClick={() => navigate('/About')}>
+          <button className='w-fit px-3 py-1 mt-3 bg-[#9ACEB4] hover:bg-[#7db69a] transition duration-200 text-[#6d4c44] rounded-lg' onClick={() => navigate('/About')}>
             Learn More
           </button>
         </div>
@@ -60,7 +60,7 @@ const Home = () => {
         <p className='font-courgette text-[#71A78C] text-center text-2xl z-0'>
           Discover the delicious offering we have everyday of the week.
         </p>
-        <button className='w-fit px-3 py-1 mt-3 bg-[#9ACEB4] font-semibold text-[#6d4c44] text-xl rounded-lg z-0' onClick={() => navigate('/Menu')}>
+        <button className='w-fit px-3 py-1 mt-3 bg-[#9ACEB4] hover:bg-[#7db69a] transition  duration-200 font-semibold text-[#6d4c44] text-xl rounded-lg z-0' onClick={() => navigate('/Menu')}>
           View Menu
         </button>
       </div>

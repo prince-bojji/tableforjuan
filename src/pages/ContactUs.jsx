@@ -47,13 +47,13 @@ function ContactUs() {
 
   return (
     <>
-      <div className='min-h-screen bg-[#fff7f4] px-5'>
+      <div className='bg-[#fff7f4] px-5'>
       <div className='w-full px-0 py-28 font-montserrat bg-[#fff7f4]'>
       <p className='text-center font-bold text-[#E79898] text-[2.5rem] sm:text-5xl'>Contact Us</p>
       <p className='py-3 text-center sm:text-base mb-[1.3em] text-sm'>Send us a message and we'll get back to you as soon as possible.<br/>Looking forward to hearing from
         you. </p>
-      <form onSubmit={addDbContact} className='w-[60vw] max-w-[500px] min-w-[300px] mx-auto bg-[#9ACEB4] shadow-[0rem_0rem_0_10px_#FFE8E8] 
-      text-[#4E4141] my-0 rounded-[3rem_0] mb-0 sm:w-3/5 p-[1.5em]'>
+      <form onSubmit={addDbContact} className='w-[80vw] max-w-[500px] mx-auto bg-[#9ACEB4] shadow-[0rem_0rem_0_10px_#FFE8E8] 
+      text-[#4E4141] my-0 rounded-[3rem_0] mb-0 sm:w-3/5 p-[1.5rem]'>
         <div className=' text-gray-700 mt-4 min-h-8 text-sm w-full'>
           <label 
             className='block my-4 text-base mx-0 font-medium'>Name 
@@ -104,9 +104,9 @@ function ContactUs() {
         </div>
         <input 
           type="submit" 
-          value="SUBMIT" 
-          className='text-sm mt-2.5 mb-0 p-2 rounded-lg border-none
-          font-bold block text-[1.1rem] min-w-[200px] bg-white 
+          value="Submit" 
+          className='text-sm mt-2.5 mb-0 p-2 rounded-full border-none
+          font-bold block min-w-[200px] bg-white cursor-pointer
           text-[#4E4141] transition-all duration-300 mx-auto hover:bg-[#ebebeb]'/>
       </form>
     </div>
