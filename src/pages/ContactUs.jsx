@@ -47,7 +47,7 @@ function ContactUs() {
 
   return (
     <>
-      <div className='bg-[#fff7f4] px-5'>
+      <div className='bg-[#fff7f4] px-5 min-h-screen lg:flex flex-col justify-center'>
       <div className='w-full px-0 py-28 font-montserrat bg-[#fff7f4]'>
       <p className='text-center font-bold text-[#E79898] text-[2.5rem] sm:text-5xl'>Contact Us</p>
       <p className='py-3 text-center sm:text-base mb-[1.3em] text-sm'>Send us a message and we'll get back to you as soon as possible.<br/>Looking forward to hearing from

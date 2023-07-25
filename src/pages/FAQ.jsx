@@ -73,7 +73,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className='pt-28 py-10 px-5 lg:px-16 bg-[#fff7f4] font-montserrat'>
+    <div className='pt-28 py-10 px-5 lg:px-16 bg-[#fff7f4] font-montserrat min-h-screen lg:flex flex-col justify-center'>
       <h2 className='text-center font-bold text-[#E79898] text-5xl mb-10'>
         Frequently Asked Questions
       </h2>
