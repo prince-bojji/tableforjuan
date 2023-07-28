@@ -99,10 +99,10 @@ function About() {
 
               {/*Description*/}
               <div className="desc w-full h-[500px] bg-[rgba(236,214,211,0.8)] shadow-[0px_0px_20px_rgba(0,0,0,0.4)] p-12 rounded-[10px] z-10">
-                <h1 className="text-left text-[#ea6a91] -mt-px text-7xl font-montserrat">
+                <h1 className="text-left text-[#ea6a91] -mt-px md:text-5xl lg:text-7xl font-montserrat">
                   OUR STORY
                 </h1>
-                <p className="text-justify my-5 text-[20px] text-[#363636] font-montserrat">
+                <p className="text-justify my-5 sm:text-xs md:text-sm lg:text-xl text-[#363636] font-montserrat">
                   During the pandemic, we aspired to have a successful business to alleviate hunger. My mother's sister presented us with an opportunity, which we eagerly seized. Initially, we planned for a food truck, but without a suitable vehicle, we opted for a food delivery service that caters to Filipinos' preferences for rice and viands. Our family is busy in the morning fulfilling orders and motivated by positive customer feedback. We aim to expand Table for Juan with a bakery and serve more customers.
                 </p>
               </div>
@@ -113,18 +113,18 @@ function About() {
   {/* SECOND PANEL */}
   {/* - responsiveness */}
 <div className="container">
-  <div className="testimonial relative px-0 w-[1500px]">
+  <div className="testimonial relative px-0 w-[1481px]">
     <Swiper
       slidesPerView={1}
       spaceBetween={0}
       className="swiper-container flex md:w-full 2xl:w-[6000px] h-[400px] items-center justify-center bg-[#e5ece9] overflow-hidden"
     >
               <SwiperSlide>
-                <div className="slide flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
-                  <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
+                <div className="slide flex items-center md:justify-center flex-col gap-y-[30px] h-full w-full">
+                  <h1 className="text-center mt-[-5px] sm:text-5xl md:text-6xl lg:text-7xl text-[#E79898] font-montserrat">
                     MISSION
                   </h1>
-                  <p className="text-center text-[27px] text-[#363636] px-40 py-0 font-montserrat">
+                  <p className="text-center md:text-xl lg:text-3xl text-[#363636] px-40 py-0 font-montserrat">
                     Our mission is to bring fast, healthy, and affordable food for the
                     people on the go. At Table ni Juan, we understand that your time is
                     valuable, and we are confident to offer the foods that made your
@@ -134,10 +134,10 @@ function About() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide flex items-center overflow-hidden justify-center flex-col gap-y-[30px] h-full w-full">
-                  <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
+                  <h1 className="text-center mt-[-5px] text-5xl md:text-6xl lg:text-7xl text-[#E79898] font-montserrat">
                     VISION
                   </h1>
-                  <p className="text-center text-[27px] text-[#363636] px-40 py-0 font-montserrat">
+                  <p className="text-center md:text-xl lg:text-3xl text-[#363636] px-40 py-0 font-montserrat">
                     Table for Juan hopes to bring more food on the future menu and make
                     it more accessible for different kinds of people by making an
                     initiative to serve our business closer to the community.
@@ -155,14 +155,16 @@ function About() {
     <img src="src/images/About/th_bg.jpg" className="th w-full h-full object-cover object-[10%_20%]" />
   </div>
   <div className="th_cont absolute -translate-x-2/4 -translate-y-2/4 flex justify-center items-center left-2/4 top-2/4">
-    <div className="text-column flex-1 w-[40rem] h-[75vh] flex flex-col justify-center mt-20 mb-[10vh] mx-20 pr-20">
-      <h2 className="text-left text-[#E79898] text-[75px] font-montserrat font-bold">BEHIND THE TABLE</h2>
-      <h4 className="text-[#AC6868] text-justify text-3xl font-montserrat">
+    <div className="text-column flex-1 w-[40rem] h-[75vh] flex flex-col justify-center mt-20 mb-[10vh] md:mx-0 lg:mx-20 md:pl-20 lg:pl-0 pr-20">
+      <h2 className="text-left text-[#E79898] md:text-4xl lg:text-7xl font-montserrat font-bold">
+        BEHIND THE TABLE
+        </h2>
+      <h4 className="text-[#AC6868] text-justify sm:text-sm md:text-sm lg:text-3xl font-montserrat">
         Step into our culinary world, where flavors come alive. Join us behind the scenes and experience the passion that fuels our kitchen. Indulge in a gastronomic journey like no other at Table for Juan.
       </h4>
     </div>
     {/* SLIDER */}
-    <div className="image-column relative w-[50vh] h-[70vh] mt-0 mx-auto my-0 pb-[10%] overflow-hidden shadow-[0px_0px_10px_rgba(0,0,0,0.8)] rounded-[20px]">
+    <div className="image-column relative w-[50vh] h-[70vh] md:mr-20 lg:mr-0 mt-0 mx-auto my-0 overflow-hidden shadow-[0px_0px_10px_rgba(0,0,0,0.8)] rounded-[20px]">
           <Swiper
             slidesPerView={1}
             spaceBetween={0}
