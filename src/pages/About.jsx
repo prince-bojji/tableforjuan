@@ -111,19 +111,14 @@ function About() {
         </div>
 
   {/* SECOND PANEL */}
-  {/* - animation
-      - responsiveness */}
-<div className="container flex w-full items-center justify-center bg-[#e5ece9] overflow-hidden">
-  <div className="testimonial relative max-w-[2800px] w-full px-0 py-[50px]">
-  <Swiper
-              slidesPerView={1}
-              spaceBetween={0}
-              navigation={{
-                prevEl: '.arrow.prev',
-                nextEl: '.arrow.next',
-              }}
-              className="swiper-container w-full"
-            >
+  {/* - responsiveness */}
+<div className="container">
+  <div className="testimonial relative px-0 w-[1500px]">
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={0}
+      className="swiper-container flex md:w-full 2xl:w-[6000px] h-[400px] items-center justify-center bg-[#e5ece9] overflow-hidden"
+    >
               <SwiperSlide>
                 <div className="slide flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
                   <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
@@ -150,7 +145,6 @@ function About() {
                 </div>
               </SwiperSlide>
             </Swiper>
-    <div className="swiper-pagination" />
   </div>
 </div>
 
