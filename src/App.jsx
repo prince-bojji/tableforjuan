@@ -9,6 +9,8 @@ import Hours_Location from './pages/Hours_Location';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 function App() {
   return (

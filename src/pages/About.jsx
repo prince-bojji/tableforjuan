@@ -113,38 +113,51 @@ function About() {
   {/* SECOND PANEL */}
   {/* - animation
       - responsiveness */}
-<section className="container w-full flex items-center justify-center bg-[#e5ece9]">
-  <div className="testimonial mySwiper relative max-w-[1800px] w-full overflow-hidden px-0 py-[50px]">
-    <div className="testi-content swiper-wrapper flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
-      <div className="slide swiper-slide flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
-        <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
-          MISSION
-        </h1>
-        <p className="text-center text-[35px] text-[#363636] px-40 py-0 font-montserrat">
-          Our mission is to bring fast, healthy, and affordable food for the
-          people on the go. At Table ni Juan, we understand that your time is
-          valuable, and we are confident to offer the foods that made your
-          childhood and makes you feel nostalgic while eating.
-        </p>
-      </div>
-      <div className="slide swiper-slide flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
-        <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
-          VISION
-        </h1>
-        <p className="text-center text-[35px] text-[#363636] px-40 py-0 font-montserrat">
-          Table for Juan hopes to bring more food on the future menu and make
-          it more accessible for different kinds of people by making an
-          initiative to serve our business closer to the community.
-        </p>
-      </div>
-    </div>
+<div className="container flex w-full items-center justify-center bg-[#e5ece9] overflow-hidden">
+  <div className="testimonial relative max-w-[2800px] w-full px-0 py-[50px]">
+  <Swiper
+              slidesPerView={1}
+              spaceBetween={0}
+              navigation={{
+                prevEl: '.arrow.prev',
+                nextEl: '.arrow.next',
+              }}
+              className="swiper-container w-full"
+            >
+              <SwiperSlide>
+                <div className="slide flex items-center justify-center flex-col gap-y-[30px] h-full w-full">
+                  <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
+                    MISSION
+                  </h1>
+                  <p className="text-center text-[27px] text-[#363636] px-40 py-0 font-montserrat">
+                    Our mission is to bring fast, healthy, and affordable food for the
+                    people on the go. At Table ni Juan, we understand that your time is
+                    valuable, and we are confident to offer the foods that made your
+                    childhood and makes you feel nostalgic while eating.
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slide flex items-center overflow-hidden justify-center flex-col gap-y-[30px] h-full w-full">
+                  <h1 className="text-center mt-[-5px] text-[80px] text-[#E79898] font-montserrat">
+                    VISION
+                  </h1>
+                  <p className="text-center text-[27px] text-[#363636] px-40 py-0 font-montserrat">
+                    Table for Juan hopes to bring more food on the future menu and make
+                    it more accessible for different kinds of people by making an
+                    initiative to serve our business closer to the community.
+                  </p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
     <div className="swiper-pagination" />
   </div>
-</section>
+</div>
 
   {/*THIRD PANEL */}
+  {/* - responsiveness */}
   <div className="meetcrew h-screen relative overflow-hidden">
-  <div className="blurbg absolute w-full h-full z-[-1] opacity-60 left-0 top-0">
+  <div className="blurbg absolute w-full h-full z-[-1] opacity-50 left-0 top-0">
     <img src="src/images/About/th_bg.jpg" className="th w-full h-full object-cover object-[10%_20%]" />
   </div>
   <div className="th_cont absolute -translate-x-2/4 -translate-y-2/4 flex justify-center items-center left-2/4 top-2/4">
@@ -155,40 +168,33 @@ function About() {
       </h4>
     </div>
     {/* SLIDER */}
-    <div className="image-column relative w-[65vh] h-[90vh] mt-5 mx-auto my-0 pb-[40%] rounded-[20%]">
-      <input type="radio" name="images" id="img1" defaultChecked=" " />
-      <input type="radio" name="images" id="img2" />
-      <input type="radio" name="images" id="img3" />
-      <input type="radio" name="images" id="img4" />
-      <div className="slide_img" id="one">
-        <img src="src/images/About/behind.jpg" alt="Image 1" className="w-[85%] h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
-        <label htmlFor="img4" className="pre w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[10px_0_0_10px]" />
-        <label htmlFor="img2" className="nxt w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[0_10px_10px_0] right-0" />
-      </div>
-      <div className="slide_img" id="two">
-        <img src="src/images/About/behind1.jpg" alt="Image 2" className="w-[85%] h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
-        <label htmlFor="img1" className="pre w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[10px_0_0_10px] left-0" />
-        <label htmlFor="img3" className="nxt w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[0_10px_10px_0] right-0" />
-      </div>
-      <div className="slide_img" id="three">
-        <img src="src/images/About/behind2.jpg" alt="Image 3" className="w-[85%] h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
-        <label htmlFor="img2" className="pre w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[10px_0_0_10px] left-0" />
-        <label htmlFor="img4" className="nxt w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[0_10px_10px_0] right-0" />
-      </div>
-      <div className="slide_img" id="four">
-        <img src="src/images/About/behind3.jpg" alt="Image 4" className="w-[85%] h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
-        <label htmlFor="img3" className="pre w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[10px_0_0_10px] left-0" />
-        <label htmlFor="img1" className="nxt w-[10%] h-full absolute z-[99] cursor-pointer top-0 rounded-[0_10px_10px_0] right-0" />
-      </div>
-      <div className="nav w-full h-[11px] absolute text-center z-[99] bottom-[10%]">
-        <label className="dots w-2.5 h-2.5 relative inline-block mx-1 my-0 rounded-[50%] top-[5px] bg-[rgba(134, 86, 86, 0.8)]" id="dot1" htmlFor="img1" />
-        <label className="dots w-2.5 h-2.5 relative inline-block mx-1 my-0 rounded-[50%] top-[5px] bg-[rgba(134, 86, 86, 0.8)]" id="dot2" htmlFor="img2" />
-        <label className="dots w-2.5 h-2.5 relative inline-block mx-1 my-0 rounded-[50%] top-[5px] bg-[rgba(134, 86, 86, 0.8)]" id="dot3" htmlFor="img3" />
-        <label className="dots w-2.5 h-2.5 relative inline-block mx-1 my-0 rounded-[50%] top-[5px] bg-[rgba(134, 86, 86, 0.8)]" id="dot4" htmlFor="img4" />
-      </div>
-    </div>
+    <div className="image-column relative w-[50vh] h-[70vh] mt-0 mx-auto my-0 pb-[10%] overflow-hidden shadow-[0px_0px_10px_rgba(0,0,0,0.8)] rounded-[20px]">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={0}
+            centeredSlides={true}
+            navigation={{
+              prevEl: '.arrow.prev',
+              nextEl: '.arrow.next',
+            }}
+            className="swiper-container"
+          >
+            <SwiperSlide>
+              <img src="/src/images/About/behind.jpg" alt="Image 1" className="object-cover w-full h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/src/images/About/behind1.jpg" alt="Image 2" className="object-cover w-full h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/src/images/About/behind2.jpg" alt="Image 3" className="object-cover w-full h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/src/images/About/behind3.jpg" alt="Image 4" className="object-cover w-full h-full shadow-[5px_5px_15px_rgba(0,0,0,0.2)] rounded-[10px]" />
+            </SwiperSlide>
+          </Swiper>
   </div>
-</div>
+  </div>
+  </div>
 </>
   );
 };
