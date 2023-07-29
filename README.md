@@ -65,6 +65,6 @@ We would like to express our gratitude to all our customers for their feedback a
 
 Remember, there's always a Table for Juan.
 
-Website URL
+### Website URL
 
 For easy access to our website, visit: https://tableforjuan-87af7.web.app/
