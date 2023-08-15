@@ -1,5 +1,7 @@
 # Table for Juan 
 
+![Master Siomai](./src/images/ss.png)
+
 ## About the Project
 
 Table for Juan is a fast, healthy, and affordable Filipino meal delivery service. The project is designed to cater to the fast-paced life of today's generation while offering a touch of nostalgia with each meal. Our goal is to bring homely, authentic Filipino meals to your doorstep, ensuring they are as delicious and nutritious as if you've just eaten at your own dining table.
