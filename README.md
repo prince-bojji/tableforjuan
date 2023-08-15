@@ -1,6 +1,6 @@
 # Table for Juan 
 
-![Master Siomai](./src/images/ss.png)
+![Table for Juan](./src/images/ss.png)
 
 ## About the Project
 
