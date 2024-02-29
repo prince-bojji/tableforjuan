@@ -53,20 +53,6 @@ We welcome contributions from everyone. If you're interested in improving the pr
 4. Push to the Branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-For any inquiries or feedback, please contact us at feedback@tableforjuan.com, or through our Facebook page.
-
-## Acknowledgements
-
-We would like to express our gratitude to all our customers for their feedback and continued support.
-
-Remember, there's always a Table for Juan.
-
 ### Website URL
 
 For easy access to our website, visit: https://tableforjuan-87af7.web.app/
