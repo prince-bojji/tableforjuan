@@ -39,8 +39,6 @@ Now you should be able to see the project running at localhost:3000.
 
 ## Contributing
 
-We welcome contributions from everyone. If you're interested in improving the project, please follow the steps below:
-
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/YourFeature`)
 3. Commit your Changes (`git commit -m 'Add some feature'`)
